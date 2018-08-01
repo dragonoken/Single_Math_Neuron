@@ -4,3 +4,11 @@ The neuron will first train on some data and adjust its weight to find the right
 Then, it will take an integer input from the user and output a number using the same operation.
 
 The operation in this program is (ideally) 2x - 1
+
+
+At first, I tried using a simple gradient descent, but I figured out that it was prone to exploding gradient when there is a huge value as an input in the training dataset. So, I added an extra step to normalize the gradients to unit scale (-1 <= grad <= 1) when the values are too big (or too small if they are negative).
+
+Also, to make the learning process faster, I made the learning rate decay when there is not much progress being made.
+
+# Dependency
+just Python 3 :) (My Python version was 3.6.5)
