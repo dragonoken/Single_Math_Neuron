@@ -13,7 +13,6 @@ def train(train_data_pairs, init_learning_rate, epoch, init_w, init_b, round_dig
     for i in range(epoch):
         SSE = 0 # Sum of Squared Errors
         for x, y in train_xy_pairs:
-            #print("w : {}\nb : {}".format(w, b))
             output = w * x + b
             error = y - output
             SSE += error ** 2
