@@ -17,4 +17,4 @@ just Python 3 :) (My Python version was 3.6.5)
 1. Run the python script (using cmd or any other program that can run it)
 2. Wait until the training is done (it shouldn't take long... only few seconds, probably)
 3. When prompted, enter any integer you want
-4. Look at this good boy comming up with the answer
+4. Look at this good boy coming up with the answer
